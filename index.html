@@ -1,436 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="Portfolio de Marwane Kaouane, étudiant en logiciels et ingénierie des données. Projets en développement logiciel, compilation, algorithmique et intelligence artificielle.">
+  <title>Marwane Kaouane — Développement logiciel</title>
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="index.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Marwane Kaouane, accueil"><span class="brand-mark">M</span><span>Marwane Kaouane<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation"><span></span><span></span><span class="sr-only">Ouvrir le menu</span></button>
+    <nav class="navigation" id="navigation" aria-label="Navigation principale">
+      <a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#profil">Profil</a><a class="nav-contact" href="#contact">Me contacter <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-    
-    <link
-      rel="shortcut icon"
-      href="image.jpg"
-      type="image/jpg"
-    />
-
-    <link
-      rel="preload"
-      href="assets/fonts/Mona-Sans.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
-    <link rel="stylesheet" href="index.css"  />
-    <script src="script.js" defer></script>
-
-    <title>Marwane Portfolio</title>
-  </head>
-
-  <body>
-
-    <script>
-      const theme = "light";
-      document.body.classList.add(theme);
-    </script>
-
-    <header class="header">
-
-      <div class="logo-container">
-        <img src="image/igm+uge.png" alt="Logo">
+  <main id="contenu">
+    <section class="hero section-shell" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Développement logiciel · Ingénierie des données</p>
+        <h1>Je transforme des idées en <span class="text-gradient">solutions concrètes.</span></h1>
+        <p class="hero-description">Étudiant en Master Logiciels et Ingénierie des Données, j’aime concevoir des applications utiles, comprendre les systèmes en profondeur et résoudre des problèmes complexes avec méthode.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projets">Découvrir mes projets <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="#contact">Parlons de votre projet <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta"><span>Basé en France</span><span class="meta-separator"></span><span>Curieux par nature, développeur par passion</span></div>
       </div>
-    
-
-      <div class="container">
-        <div class="header-textbox">
-          <h1 class="h1">
-            <span>Marwane KAOUANE</span>
-          </h1>
-
-          <h2 class="h2">            
-            <span>Étudiant Master Logiciels et Ingénierie des Données</span>
-          </h2>
-
-          <p class="header-text">
-            Bienvenue sur mon portfolio, vous trouverez ici même mes projets, les compétences que j'ai pû acquérir durant mon parcours,
-            ainsi que mes coordonnées.
-          </p>
-
-          <div class="header-btns">
-            <a href="#contact" class="btn btn-cta">STAGE 2025</a>
-            <a href="#work" class="btn btn-secondary">Mes projets</a>
-          </div>
-        </div>
+      <div class="hero-art" aria-label="Illustration abstraite évoquant le code et les systèmes">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-core"><span class="code-bracket">&lt;</span><span class="core-slash">/</span><span class="code-bracket">&gt;</span></div>
+        <div class="floating-chip chip-top"><span class="chip-dot"></span> Construire</div>
+        <div class="floating-chip chip-bottom"><span>01</span> Comprendre · Concevoir · Améliorer</div>
+        <span class="art-star star-one">✳</span><span class="art-star star-two">✦</span>
       </div>
-    </header>
+      <a class="scroll-cue" href="#projets"><span class="scroll-line"></span> Faire défiler</a>
+    </section>
 
-    <main>
-      <section class="Outils">
-        <div class="container">
-          <h2 class="h2">Outils</h2>
-          <div class="logos">
-            <div class="logo-group">
-                <img
-                  loading="lazy"
-                  src="image/jupyter.png"
-                  alt="Logo jupyter"
-                  class="logo hide to-top"
-                />
-                <img
-                  loading="lazy"
-                  src="image/MacOs.png"
-                  alt="Logo MacOs"
-                  class="logo"
-                />
-                <img
-                  loading="lazy"
-                  src="image/linux.png"
-                  alt="Logo Linux"
-                  class="logo hide to-bottom"
-                />
-            </div>
-            
-            <div class="logo-group">
-                <img
-                  loading="lazy"
-                  src="image/postgresql.png"
-                  alt="Logo PostgreSQL"
-                  class="logo hide to-top"
-                />
-                <img
-                  loading="lazy"
-                  src="image/mongo.png"
-                  alt="Logo MongoDB"
-                  class="logo"
-                />
-                <img
-                  loading="lazy"
-                  src="image/emacs.png"
-                  alt="Logo emacs"
-                  class="logo hide to-bottom"
-                />
-            </div>
-            <div class="logo-group">
-                <img
-                  loading="lazy"
-                  src="image/eclipse.png"
-                  alt="Logo Eclipse IDE"
-                  class="logo hide to-top"
-                />
-                <img
-                  loading="lazy"
-                  src="image/IntelliJ.png"
-                  alt="Logo IntelliJ IDEA"
-                  class="logo"
-                />
-                <img
-                  loading="lazy"
-                  src="image/vsCode.png"
-                  alt="Logo Visual Studio Code"
-                  class="logo hide to-bottom"
-                />
-              </div>
-
-            <div class="logo-group">
-                <img
-                  loading="lazy"
-                  src="image/git.png"
-                  alt="Logo Git"
-                  class="logo hide to-top"
-                />
-                <img
-                  loading="lazy"
-                  src="image/gitlab.png"
-                  alt="Logo GitLab"
-                  class="logo"
-                />
-                <img
-                  loading="lazy"
-                  src="image/excel.png"
-                  alt="Logo Excel"
-                  class="logo hide to-bottom"
-                />
-              </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="work">
-        <div class="container">
-          <h2 class="h2" id="work">Projets</h2>
-          <div class="work-boxes">
-            <!-- Premier projet -->
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Xplain</h3>
-                <p class="work-text">
-                  Une application web capable de compiler du code et de fournir des erreurs simplifiées 
-                  et détaillées, accompagnées de suggestions de correction générées par des LLM.
-                </p>
-                <ol class="work-technologies">
-                  <li>Java23</li>
-                  <li>Spring</li>
-                  <li>JPA</li>
-                  <li>React</li>
-                  <li>Bootstrap</li>
-                  <li>Llama3.2</li>
-                </ol>
-              </div>
-              <picture class="work-img">
-                <ol>
-                  <a href="https://github.com/Mar1808/Projects/tree/main/Xplain/xplain" target="_blank" rel="noopener noreferrer">
-                    🔗 Voir sur GitHub
-                  </a>
-                </ol>
-                <img
-                  loading="lazy"
-                  src="image/XplainMenu.png"
-                  alt="Xplain Menu image"
-                />
-              </picture>
-            </div>
-      
-            <!-- Autres projets -->
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Tower Defense</h3>
-                <p>
-                  Développement d’un jeu de stratégie et de gestion de ressources. Le but du jeu est de 
-                  poser des tours, à condition que la réserve de ressources le permette. Chaque tour possède 
-                  une zone de tir. Une vague d'ennemis est lancée toutes les 30 secondes, et le joueur peut 
-                  choisir de déclencher une vague supplémentaire avant ce délai pour obtenir un bonus. 
-                  Un chemin est généré aléatoirement à l’aide d’un algorithme.
-                  Les tours peuvent être améliorées grâce à l’ajout de gemmes, qui leur confèrent des 
-                  caractéristiques spéciales, telles que des dégâts de zone, un ralentissement des ennemis 
-                  touchés, ou encore l’effet de brûler les adversaires.
-                  Le jeu inclut une interface graphique 2D, affichant des informations telles que la progression 
-                  des vagues d'ennemis, la gestion des ressources et la possibilité de fusionner des éléments 
-                  pour améliorer les tours.
-                </p>
-                <ol class="work-technologies">
-                  <li>C</li>
-                  <li>LibMLV</li>
-                  <li>VsCode</li>
-                </ol>
-              </div>
-              <picture class="work-img">
-                <ol>
-                  <a href="https://github.com/Mar1808/Projects/tree/main/TowerDefense" target="_blank" rel="noopener noreferrer">
-                    🔗 Voir sur GitHub
-                  </a>
-                </ol>
-                <img
-                  loading="lazy"
-                  src="image/towerDefense.png"
-                  alt="towerDefense image"
-                />
-              </picture>
-            </div>
-      
-            <!-- Projet Compilateur -->
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Compilateur</h3>
-                <p>L'implémentation d'un compilateur pour un sous-ensemble du langage C 
-                    permet de détecter et de signaler les erreurs lexicales, syntaxiques, 
-                    sémantiques et autres, en indiquant la ligne et la colonne où chaque erreur se produit. 
-                    Le compilateur génère un code en assembleur NASM, conforme à la syntaxe Unix, 
-                    qui pourra ensuite être compilé en code machine.
-                </p>
-                <ol class="work-technologies">
-                  <li>C</li>
-                  <li>Assembleur nasm x86_64</li>
-                  <li>Bison</li>
-                  <li>Flex</li>
-                  <li>VsCode</li>
-                </ol>
-              </div>
-              <picture class="work-img">
-                <ol>
-                  <a href="https://github.com/Mar1808/Projects/tree/main/Compilateur" target="_blank" rel="noopener noreferrer">
-                    🔗 Voir sur GitHub
-                  </a>
-                </ol>
-                <img
-                  loading="lazy"
-                  src="image/compilateur.png"
-                  alt="Compilateur Image"
-                />
-              </picture>
-            </div>
-      
-            <!-- Projet Big Adventure -->
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">The Big Adventure</h3>
-                <p class="work-text">
-                  Jeu d’aventure open world (PvE) 2D inspiré de Zelda, implémenté en Java 21. 
-                  Le joueur peut se déplacer sur une carte et y rencontrer des ennemis sous forme 
-                  d'images PNG, qui peuvent attaquer le joueur ou lancer des dialogues. Le joueur 
-                  peut interagir avec certains éléments de la carte, comme se déplacer en avion, en 
-                  bateau ou en voiture, et récupérer des clés pour ouvrir des portes. D'autres éléments
-                   de la carte, comme la lave, peuvent blesser le joueur et lui retirer de la vie.
-                </p>
-                <ol class="work-technologies">
-                  <li>Java21</li>
-                  <li>Zen5</li>
-                  <li>Eclipse</li>
-                </ol>
-              </div>
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="image/tba.png"
-                  alt="TBA Image"
-                />
-              </picture>
-            </div>
-
-            <!-- Projet Segmentation par QuadTree -->
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Segmentation par QuadTree</h3>
-                <p class="work-text">
-                  Ce projet porte sur la segmentation par QuadTree, réalisé en utilisant une 
-                  structure et des parcours récursifs d'arbre. Il vise à découper une zone de 
-                  données bidimensionnelles en sous-zones de tailles égales pour faciliter le 
-                  traitement de données telles que des images ou des ensembles de particules. 
-                  Le QuadTree est utilisé comme structure accélératrice pour réduire la complexité 
-                  de calculs, par exemple, en réduisant le nombre d’interactions à analyser entre 
-                  particules dans un espace. Le projet inclut la gestion de la mémoire et l'intégration 
-                  de particules dans des noeuds du QuadTree, avec des techniques de chaînage pour gérer 
-                  les données de manière efficace.
-                </p>
-                <ol class="work-technologies">
-                  <li>C</li>
-                  <li>LibMLV</li>
-                  <li>VsCode</li>
-                </ol>
-              </div>
-              <picture class="work-img">
-                <ol>
-                  <a href="https://github.com/Mar1808/Projects/tree/main/QuadTree" target="_blank" rel="noopener noreferrer">
-                    🔗 Voir sur GitHub
-                  </a>
-                </ol>
-                <img
-                  loading="lazy"
-                  src="image/quadtree.png"
-                  alt="quadtree"
-                />
-              </picture>
-            </div>
-      
-            <!-- Projet Enveloppe Convexe -->
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Enveloppe Convexe</h3>
-                <p class="work-text">
-                    Implémentation d'une enveloppe convexe qui fournit une représentation simplifiée 
-                    et structurée d'un ensemble de points, en encapsulant ces derniers dans une forme 
-                    convexe minimale. Ce projet explore des notions mathématiques liées à la géométrie 
-                    computationnelle, tout en impliquant la manipulation de listes doublement chaînées 
-                    bouclées pour gérer efficacement les points et optimiser les algorithmes de calcul de 
-                    l'enveloppe convexe. L'objectif final est de proposer une solution à la fois performante 
-                    et robuste pour la gestion de données géométriques complexes.
-                </p>
-                <ol class="work-technologies">
-                  <li>C</li>
-                  <li>LibMLV</li>
-                  <li>VsCode</li>
-                </ol>
-              </div>
-              <picture class="work-img">
-                <ol>
-                  <a href="https://github.com/Mar1808/Projects/tree/main/ConvexHull" target="_blank" rel="noopener noreferrer">
-                    🔗 Voir sur GitHub
-                  </a>
-                </ol>
-                <img
-                  loading="lazy"
-                  src="image/enveloppe.png"
-                  alt="Enveloppe"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      
-      <section class="skills">
-        <div class="container">
-          <h2 class="h2" id="skills">Langages</h2>
-          <div class="skills-imgs">
-            <img src="image/python.png" alt="python" class="skills-img" loading="lazy" title="python">
-            <img src="image/C.png" alt="C" class="skills-img" loading="lazy" title="Web C">
-            <img src="image/java.png" alt="Java" class="skills-img" loading="lazy" title="Java">
-            <img src="image/js.png" alt="js" class="skills-img" loading="lazy" title="js">
-            <img src="image/sql.png" alt="SQL" class="skills-img" loading="lazy" title="SQL">
-            <img src="image/haskell.png" alt="Haskell" class="skills-img" loading="lazy" title="Haskell">
-            <img src="image/react.png" alt="React" class="skills-img" loading="lazy" title="React">
-            <img src="image/angular.png" alt="Angular" class="skills-img" loading="lazy" title="Angular">
-            <img src="image/bash.png" alt="Bash" class="skills-img" loading="lazy" title="Bash">
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      
-      <section class="contact">
-        <div class="container">
-          <h2 class="h2" id="contact">STAGE 2025</h2>
-              <strong href="#" class="hire-alert">
-                <span class="indicator"></span>
-                En recherche de Stage
-              </strong>
-              <div>
-              <p class="contact-text">
-                Je recherche un Stage dans le Développement logiciel à compter du 1er mai 2025 
-                pour une durée de 4 mois pour validé ma 4ème année en cours.
-                Je suis travailleur, respectueux, motivé, sociable, créatif, rigoureux, orienté solution, 
-                capable d'adaptation et ayant un excellent esprit d'équipe. J'aime collaborer et échanger 
-                pour résoudre des problèmes complexes, et je m'engage à être organisé et à coder 
-                selon les conventions pour réaliser un logiciel stable et facile à améliorer.
-              </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <nav>
-              <ol class="footer-links">
-                <li class="footer-link">
-                  <a title="GitHub" href="https://github.com/Mar1808/Projects" target="_blank" rel="noopener"
-                    ><img
-                      loading="lazy"
-                      src="image/git.png"
-                      alt="GitHub"
-                  /></a>
-                </li>
-                <li class="footer-link">
-                  <a title="Linkedin" href="https://linkedin.com/in/marwane-kaouane" target="_blank" rel="noopener"
-                    ><img
-                      loading="lazy"
-                      src="image/linkedin.png"
-                      alt="Linkedin"
-                  /></a>
-                </li>
-                <li class="footer-link">
-                    <a title="Mail" href="mailto:marwane.kaouane@edu.univ-eiffel.fr">
-                    <img
-                      loading="lazy"
-                      src="image/mail.png"
-                      alt="Mail"
-                  /></a>
-                </li>
-              </ol>
-            </nav>
-        </div>
+    <section class="projects section-shell section-space" id="projets">
+      <div class="section-heading">
+        <div><p class="eyebrow">Sélection de travaux</p><h2>Des projets, <span class="muted-heading">du concept au code.</span></h2></div>
+        <p class="section-intro">Des applications web aux algorithmes bas niveau, chaque projet m’a permis d’explorer une nouvelle façon de résoudre un problème.</p>
       </div>
-    </footer>
-  </body>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <a class="project-visual visual-xplain" href="https://github.com/Mar1808/Projects/tree/main/Xplain/xplain" target="_blank" rel="noopener noreferrer" aria-label="Voir Xplain sur GitHub">
+            <img src="image/XplainMenu.png" alt="Interface de l’application Xplain" loading="lazy">
+            <span class="visual-label">Application web · IA</span><span class="visual-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-content"><div class="project-topline"><span class="project-index">01 / WEB & IA</span><span class="project-type">Assistant de programmation</span></div>
+            <h3>Xplain</h3><p>Une application web qui compile du code, explique les erreurs de manière accessible et propose des pistes de correction générées par un modèle de langage.</p>
+            <ul class="tag-list"><li>Java 23</li><li>Spring</li><li>JPA</li><li>React</li><li>LLM</li></ul>
+            <a class="text-link" href="https://github.com/Mar1808/Projects/tree/main/Xplain/xplain" target="_blank" rel="noopener noreferrer">Explorer le projet <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <a class="project-visual visual-tower" href="https://github.com/Mar1808/Projects/tree/main/TowerDefense" target="_blank" rel="noopener noreferrer" aria-label="Voir Tower Defense sur GitHub">
+            <img src="image/towerDefense.png" alt="Capture du jeu Tower Defense" loading="lazy"><span class="visual-label">Jeu · Algorithmique</span><span class="visual-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-content"><div class="project-topline"><span class="project-index">02 / GAME DEV</span></div><h3>Tower Defense</h3><p>Un jeu de stratégie avec gestion de ressources, vagues d’ennemis, chemin généré aléatoirement et tours évolutives aux effets spéciaux.</p><ul class="tag-list"><li>C</li><li>LibMLV</li><li>Algorithmes</li></ul><a class="text-link" href="https://github.com/Mar1808/Projects/tree/main/TowerDefense" target="_blank" rel="noopener noreferrer">Explorer le projet <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <a class="project-visual visual-compiler" href="https://github.com/Mar1808/Projects/tree/main/Compilateur" target="_blank" rel="noopener noreferrer" aria-label="Voir le compilateur sur GitHub">
+            <img src="image/compilateur.png" alt="Capture du projet compilateur" loading="lazy"><span class="visual-label">Systèmes · Compilation</span><span class="visual-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-content"><div class="project-topline"><span class="project-index">03 / LANGAGES</span></div><h3>Compilateur</h3><p>Implémentation d’un compilateur pour un sous-ensemble du C : analyse lexicale, syntaxique et sémantique, puis génération de code assembleur NASM x86-64.</p><ul class="tag-list"><li>C</li><li>Flex</li><li>Bison</li><li>NASM</li></ul><a class="text-link" href="https://github.com/Mar1808/Projects/tree/main/Compilateur" target="_blank" rel="noopener noreferrer">Explorer le projet <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <a class="project-visual visual-adventure" href="image/tba.png" target="_blank" rel="noopener noreferrer" aria-label="Voir la capture de The Big Adventure">
+            <img src="image/tba.png" alt="Capture du jeu The Big Adventure" loading="lazy"><span class="visual-label">Jeu 2D · Java</span><span class="visual-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-content"><div class="project-topline"><span class="project-index">04 / GAME DEV</span></div><h3>The Big Adventure</h3><p>Un jeu d’aventure 2D en monde ouvert : exploration, ennemis, dialogues, véhicules, objets à collecter et environnement qui influence la progression.</p><ul class="tag-list"><li>Java 21</li><li>Jeu 2D</li><li>POO</li></ul></div>
+        </article>
+        <article class="project-card">
+          <a class="project-visual visual-quadtree" href="https://github.com/Mar1808/Projects/tree/main/QuadTree" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet QuadTree sur GitHub">
+            <img src="image/quadtree.png" alt="Visualisation du projet QuadTree" loading="lazy"><span class="visual-label">Structures de données</span><span class="visual-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-content"><div class="project-topline"><span class="project-index">05 / ALGORITHMIQUE</span></div><h3>Segmentation par QuadTree</h3><p>Utilisation d’un arbre récursif pour partitionner un espace 2D et accélérer certains calculs, notamment la gestion de particules et de leurs interactions.</p><ul class="tag-list"><li>C</li><li>Récursivité</li><li>Structures d’arbres</li></ul><a class="text-link" href="https://github.com/Mar1808/Projects/tree/main/QuadTree" target="_blank" rel="noopener noreferrer">Explorer le projet <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <a class="project-visual visual-hull" href="https://github.com/Mar1808/Projects/tree/main/ConvexHull" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Enveloppe convexe sur GitHub">
+            <img src="image/enveloppe.png" alt="Visualisation de l’enveloppe convexe" loading="lazy"><span class="visual-label">Géométrie computationnelle</span><span class="visual-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-content"><div class="project-topline"><span class="project-index">06 / ALGORITHMIQUE</span></div><h3>Enveloppe convexe</h3><p>Construction de la plus petite forme convexe contenant un ensemble de points, avec manipulation de listes doublement chaînées circulaires.</p><ul class="tag-list"><li>C</li><li>Géométrie</li><li>Structures de données</li></ul><a class="text-link" href="https://github.com/Mar1808/Projects/tree/main/ConvexHull" target="_blank" rel="noopener noreferrer">Explorer le projet <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <div class="projects-footer"><span>Le code et les détails techniques sont disponibles sur GitHub.</span><a class="button button-outline" href="https://github.com/Mar1808/Projects" target="_blank" rel="noopener noreferrer">Tous mes dépôts <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="skills-section section-shell section-space" id="competences">
+      <div class="section-heading"><div><p class="eyebrow">Boîte à outils</p><h2>Les technologies <span class="muted-heading">que j’explore.</span></h2></div><p class="section-intro">Un socle technique varié, des langages proches du système aux outils du développement web et de la donnée.</p></div>
+      <div class="skills-layout">
+        <article class="skill-group"><span class="skill-number">01</span><h3>Langages</h3><p>Concevoir, structurer et implémenter des solutions.</p><div class="skill-pills"><span>Java</span><span>C</span><span>Python</span><span>JavaScript</span><span>SQL</span><span>Haskell</span><span>Bash</span></div></article>
+        <article class="skill-group"><span class="skill-number">02</span><h3>Web & frameworks</h3><p>Développer des applications et leurs composants.</p><div class="skill-pills"><span>React</span><span>Angular</span><span>Spring</span><span>JPA</span></div></article>
+        <article class="skill-group"><span class="skill-number">03</span><h3>Données & outils</h3><p>Manipuler les données et organiser le travail de développement.</p><div class="skill-pills"><span>PostgreSQL</span><span>MongoDB</span><span>Git</span><span>GitLab</span><span>Linux</span><span>macOS</span><span>Flex / Bison</span></div></article>
+      </div>
+      <p class="skills-note">Cette liste présente les technologies utilisées dans mes projets et mon parcours ; elle ne constitue pas une évaluation de niveau.</p>
+    </section>
+
+    <section class="profile-section section-shell section-space" id="profil">
+      <div class="profile-card"><div class="profile-accent" aria-hidden="true">“</div><div><p class="eyebrow">Un peu sur moi</p><h2>J’aime comprendre <span class="text-gradient">comment les choses fonctionnent.</span></h2><p>Mon parcours m’amène à travailler sur des problématiques variées : conception logicielle, algorithmique, compilation, développement web et données. J’apprécie le travail en équipe, les échanges d’idées et la recherche de solutions claires, robustes et maintenables.</p><p>Je cherche à progresser continuellement, à apprendre de nouvelles approches et à transformer les contraintes techniques en solutions concrètes.</p></div></div>
+    </section>
+
+    <section class="contact-section section-shell section-space" id="contact">
+      <div class="contact-panel"><div class="contact-copy"><p class="eyebrow"><span class="status-dot"></span> Restons en contact</p><h2>Une idée, une opportunité ou un projet ?</h2><p>Je serais ravi d’échanger avec vous sur le développement logiciel, mes projets ou une future collaboration.</p></div><div class="contact-actions"><a class="button button-light" href="mailto:marwane.kaouane@edu.univ-eiffel.fr">M’écrire un e-mail <span aria-hidden="true">↗</span></a><a class="contact-social" href="https://linkedin.com/in/marwane-kaouane" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="contact-social" href="https://github.com/Mar1808/Projects" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#accueil"><span class="brand-mark">M</span><span>Marwane Kaouane<span class="brand-dot">.</span></span></a><p>Conçu avec curiosité et beaucoup de café.</p><a href="#accueil" class="back-top">Retour en haut ↑</a></footer>
+</body>
 </html>
